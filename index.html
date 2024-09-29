@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Pemesanan Layanan</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    label, input {
+      display: block;
+      margin-bottom: 10px;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #25d366;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #128c7e;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Form Pemesanan Layanan</h1>
+  <form id="orderForm">
+    <label for="name">Nama:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label>Layanan:</label>
+    <input type="radio" id="service1" name="service" value="Cuci Sepatu" required>
+    <label for="service1">Cuci Sepatu</label><br>
+    <input type="radio" id="service2" name="service" value="Cuci Tas" required>
+    <label for="service2">Cuci Tas</label><br>
+    <input type="radio" id="service3" name="service" value="Cuci Jaket" required>
+    <label for="service3">Cuci Jaket</label><br><br>
+
+    <label for="address">Alamat:</label>
+    <input type="text" id="address" name="address" required>
+
+    <button type="submit">Kirim</button>
+  </form>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
